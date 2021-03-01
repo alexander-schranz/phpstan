@@ -42,7 +42,7 @@ jobs:
           tools: composer:snapshot
 
       - name: "Cache dependencies"
-        uses: "actions/cache@v2"
+        uses: "actions/cache@v2.1.4"
         with:
           path: "~/.composer/cache"
           key: "php-${{ matrix.php-version }}-composer-${{ hashFiles('**/composer.json') }}"
@@ -103,7 +103,7 @@ jobs:
           ini-values: memory_limit=256M
 
       - name: "Cache dependencies"
-        uses: "actions/cache@v2"
+        uses: "actions/cache@v2.1.4"
         with:
           path: "~/.composer/cache"
           key: "php-${{ matrix.php-version }}-composer-${{ hashFiles('**/composer.json') }}"
@@ -213,7 +213,7 @@ jobs:
           ini-values: memory_limit=256M
 
       - name: "Cache dependencies"
-        uses: "actions/cache@v2"
+        uses: "actions/cache@v2.1.4"
         with:
           path: "~/.composer/cache"
           key: "php-${{ matrix.php-version }}-composer-${{ hashFiles('**/composer.json') }}"
@@ -290,7 +290,7 @@ jobs:
           php-version: "7.4"
 
       - name: "Cache dependencies"
-        uses: "actions/cache@v2"
+        uses: "actions/cache@v2.1.4"
         with:
           path: "~/.composer/cache"
           key: "php-7.4-composer-${{ hashFiles('**/composer.json') }}"
